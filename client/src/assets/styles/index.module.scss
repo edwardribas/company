@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Outfit:100,200,300,regular,500,600,700,800,900');
+
+* {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    line-height: 1;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    min-height: 100vh;
+    font-size: 16px;
+}
+
+img, header, footer, figure, button, a {
+    user-select: none;
+}

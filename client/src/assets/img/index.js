@@ -1,0 +1,1 @@
+export {ReactComponent as ConomyWhiteLogo} from './conomy_white_logo.svg';

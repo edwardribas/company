@@ -1,35 +1,40 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { ConomyWhiteLogo } from '../../assets/img';
 import styles from './styles.module.scss';
 
 export const Header = () => {
+
     return (
         <header className={styles.header}>
             <nav>
-                <figure>
-                    <ConomyWhiteLogo/>
-                </figure>
+                <NavLink
+                    to="/"
+                >
+                    <figure>
+                        <ConomyWhiteLogo/>
+                    </figure>
+                </NavLink>
                 <ul>
                     <li>
-                        <Link to="/">
+                        <NavLink to="/">
                             Home
-                        </Link>
+                        </NavLink>
                     </li>
                     <li>
-                        <Link to="/projects">
+                        <NavLink to="/projects">
                             Projects
-                        </Link>
+                        </NavLink>
                     </li>
                     <li>
-                        <Link to="/creation">
+                        <NavLink to="/creation">
                             Creation
-                        </Link>
+                        </NavLink>
                     </li>
                     <li>
-                        <Link to="/details">
+                        <NavLink to="/details">
                             Details
-                        </Link>
+                        </NavLink>
                     </li>
                 </ul>
             </nav>

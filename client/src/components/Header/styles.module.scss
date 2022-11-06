@@ -2,18 +2,18 @@
     background-color: rgb(40, 40, 40);
     padding: 16px 12px;
     width: 100%;
+    margin-bottom: 50px;
 
     nav {
         width: 95%;
-        max-width: 1100px;
+        max-width: 1200px;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
         figure {
-            width: 40px;
-            height: 40px;
+            width: 150px;
 
             svg {
                 display: block;
@@ -27,9 +27,14 @@
             gap: 20px;
             li {
                 a {
-                    color: rgb(240, 240, 240);
+                    color: rgb(221, 221, 221);
                     font-weight: 300;
                     transition: color .2s ease;
+
+                    &.active{
+                        font-weight: 400;
+                        color: #fff;
+                    }
                 }
             }
         }

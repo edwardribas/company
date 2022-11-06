@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { ConomyWhiteLogo } from '../../assets/img';
+import { ConomyWhiteLogotype } from '../../assets/img';
 import styles from './styles.module.scss';
 
 export const Header = () => {
@@ -8,32 +8,25 @@ export const Header = () => {
     return (
         <header className={styles.header}>
             <nav>
-                <NavLink
-                    to="/"
-                >
+                <NavLink to="/" end>
                     <figure>
-                        <ConomyWhiteLogo/>
+                        <ConomyWhiteLogotype/>
                     </figure>
                 </NavLink>
                 <ul>
                     <li>
-                        <NavLink to="/">
+                        <NavLink to="/" className={({isActive}) => isActive ? styles.active : undefined} end>
                             Home
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/projects">
-                            Projects
+                        <NavLink to="/projects" className={({isActive}) => isActive ? styles.active : undefined}>
+                            Projetos
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/creation">
-                            Creation
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/details">
-                            Details
+                        <NavLink to="/creation" className={({isActive}) => isActive ? styles.active : undefined}>
+                            Criar
                         </NavLink>
                     </li>
                 </ul>

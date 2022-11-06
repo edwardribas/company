@@ -1,0 +1,46 @@
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    h1 {
+        color: #F03063;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    p {
+        font-size: 1.15rem;
+        margin-top: -10px;
+        color: rgb(30, 30, 30);
+        font-weight: 300;
+    }
+    a {
+        background-color: #F03063;
+        border: 2px solid #F03063;
+        color: #fff;
+        padding: 16px 24px;
+        cursor: pointer;
+        border-radius: 40px;
+        font-size: 1rem;
+        font-weight: 500;
+        transition: background-color .2s ease, color .2s ease;
+        &:hover{
+            background-color: transparent;
+            color: #F03063;
+        }
+    }
+    figure {
+        width: 100%;
+        display: block;
+        max-width: 300px;
+        margin-top: 30px;
+
+        svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    }
+}

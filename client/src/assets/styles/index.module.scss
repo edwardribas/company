@@ -21,3 +21,8 @@ html, body {
 img, header, footer, figure, button, a {
     user-select: none;
 }
+
+::-webkit-outer-spin-button,
+::-webkit-inner-spin-button {
+    appearance: none;
+}
